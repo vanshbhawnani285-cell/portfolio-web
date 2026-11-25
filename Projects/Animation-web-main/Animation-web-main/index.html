@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: whitesmoke;
+    }
+    .square{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        color: black;
+        text-align: center;
+        line-height: 100px;
+    }
+    .s1{
+        background-color: lightgreen;
+        animation-name: colour;
+    }
+    @keyframes colour {
+        from,to{
+            background-color: rgb(204, 201, 33);
+        }
+        50%{
+            background-color: rgb(214, 22, 38);
+        }
+    }
+    .s2{
+        background-color: orange;
+        animation-name:move ;
+    }
+    @keyframes move {
+        0%,100%{
+            transform: translate(0,0);
+        }
+        50%{
+            transform: translate(0,100px);
+        }
+    }
+    .s3{
+        background-color: pink;
+        animation-name:rotate ;
+
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(0);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .s4{
+        background-color: rgb(56, 145, 180);
+        animation-name:pulse ;
+
+    }
+    @keyframes pulse {
+        0%,100%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.5);
+        }
+    }
+    .s5{
+        background-color: rgb(110, 192, 110);
+        animation-name: fade;
+
+    }
+    @keyframes fade {
+        0%,100%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+    }
+    .s6{
+        background-color: blueviolet;
+        animation-name:rotate ;
+        border-radius: 50%;
+        border: 15px solid navy;
+        border-top: 15px solid skyblue;
+
+    }
+    .rectangle{
+        height: 90%;
+        width: 40%;
+        border: 1px dashed goldenrod;
+    }
+    .cube{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(23, 95, 23);
+        animation:motion 3s infinite;
+    }
+    @keyframes motion {
+        0%,100%{
+            transform: translate(0);
+        }
+        25%{
+            transform: translate(430px,0);
+        }
+        50%{
+            transform: translate(430px,260px);
+        }
+        75%{
+            transform: translate(0px,260px);
+        }
+    }
+    .ball{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid black;
+        animation: google 3s infinite ease-in-out;
+    }
+    @keyframes google{
+        0%,100%{
+            transform: translate(0);
+        }
+        25%{
+            transform: translate(0,50px);
+        }
+        75%{
+            transform: translate(0,-50px);
+        }
+    }
+    .b1{
+        background-color: red;
+    }
+    .b2{
+        animation-delay: .3s;
+        background-color: green;
+    }
+    .b3{
+        animation-delay: .6s;
+        background-color: blue;
+    }
+    .b4{
+        animation-delay: .9s;
+        background-color: yellow;
+    }
+    .b5{
+        animation-delay: 1.2s;
+        background-color: orange;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="square s1">Color</div>
+        <div class="square s2">Move</div>
+        <div class="square s3">Rotate</div>
+        <div class="square s4">Pulse</div>
+        <div class="square s5">Fade</div>
+        <div class="square s6"></div>
+    </div>
+    <div class="box">
+       <div class="rectangle">
+        <div class="cube"></div>
+       </div>
+       <div class="rectangle" style="display: flex;
+        align-items: center; justify-content: center; gap: 10px ;">
+        <div class="ball b1"></div>
+        <div class="ball b2"></div>
+        <div class="ball b3"></div>
+        <div class="ball b4"></div>
+        <div class="ball b5"></div>
+       </div>
+
+    </div>
+</body>
+</html>
+

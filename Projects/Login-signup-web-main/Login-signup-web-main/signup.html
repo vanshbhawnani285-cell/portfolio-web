@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            margin-top: 30px; 
+        }
+        body{
+            height: 100vh;
+            background: linear-gradient(90deg,skyblue,violet);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            height: 80%;
+            width: 30%;
+            background: white;
+            border-radius: 10px;
+        }
+        .basic,.email,.password,.button{
+            width: 90%;
+            margin: auto;
+            margin-top: 3%;
+        }
+        input{
+            height: 20px;
+            margin-top: 3%;
+            margin-left: 5%;
+            background-color: rgb(231, 231, 231);
+            border: 1px solid grey;
+            border-radius: 2px;
+        }
+        button{
+            color: white;
+            height: 40%;
+            width: 100%;
+            background: linear-gradient(90deg,skyblue,violet);
+            border: none;
+            border-radius: 20px;
+        }
+        .button{
+            height: 20%;
+            width: 80%;
+
+        }
+        .button>p{
+            text-align: center;
+            margin-top: 3%;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1 align="center">Sign Up</h1>
+        <div class="basic">
+            <label for="">First Name:</label>
+            <input type="text"><br>
+            <label for="">Last Name:</label>
+            <input type="text"><br>
+            <label for="">Gender :</label>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female <br>
+            <label for="">Date of Birth:</label>
+            <input type="date" name="" id=""><br>
+            <label for="">Mobile No.</label>
+            <input type="tel" name="" id="">
+        </div>
+        <div class="email">
+            <label for="">Email:</label>
+            <input type="email"> <br>
+            <label for="">Confirm Email:</label>
+            <input type="email" name="" id="">
+        </div>
+        <div class="password">
+            <label for="">Password:</label>
+            <input type="password"><br>
+            <label for="">Confirm Password:</label>
+            <input type="password" name="" id="">
+        </div>
+        <div class="button">
+            <input type="checkbox" name="" id=""> Terms And Conditions <br>
+            <button>Sign Up</button>
+            <p>Already a Member ? <a href="index.html">Log In</a></p>
+        </div>
+    </form>
+</body>
+</html>

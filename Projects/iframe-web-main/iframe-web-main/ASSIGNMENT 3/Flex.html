@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 600px;
+            border: 1px solid black;
+        }
+        .header{
+            height: 20%;
+            background-color:teal;
+            color: white;
+        }
+        .footer{
+            height: 20%;
+            background-color:teal;
+        }
+        .center{
+            height: 60%;
+            background-color :brown;
+            display: flex;
+        }
+        .left{
+            height:100%;
+            background-color:coral;
+            width: 30%;
+        }
+        .right{
+            height: 100%;
+            background-color:yellow;
+            width: 70%;
+        }
+        .top{
+            height: 50%;
+            background-color:aqua;
+        }
+        .bottom{
+            height: 50%;
+            background-color: blue;
+            display: flex;
+        }
+        .bottom1{
+            height: 100%;
+            width: 50%;
+        }
+        .b1{
+            background-color: beige;
+        }
+        .b2{
+            background-color: goldenrod;
+        }
+        *{  padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align ="center">Flex Box</h1>
+    <div class="container">
+    <div class="header">
+        <h1 align="center">Header</h1>
+    </div> 
+       <div class="center">
+        <div class="left">
+            <H1 align="center">Left</H1>
+        </div>
+        <div class="right">
+            
+          <div class="top">
+             <h1 align="center">Right</h1>
+            
+          </div>
+          <div class="bottom">
+            <div class="bottom1 b1">
+                 <h1 align="center">Bottom Left</h1>
+            </div>
+            <div class="bottom1 b2">
+                 <h1 align="center">Bottom Right</h1>
+            </div>
+            
+            
+            </div>  
+            </div>
+        </div>
+        <div class="footer" >
+             <h1 align="center">Footer</h1>
+        </div>
+        </div>
+    
+</body>
+</html>
